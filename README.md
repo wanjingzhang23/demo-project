@@ -1,24 +1,57 @@
-# demo-project
-# A/B Testing Platform
-
-A simplified A/B testing platform built with Java and Spring Boot.
+# Intelligent Alert Optimization Layer
 
 ## Overview
-This project simulates the core components of an experimentation platform:
-- experiment creation
-- user assignment through deterministic bucketing
-- metrics/event logging
 
-## Planned APIs
-- POST /create-experiment
-- GET /assign-user
-- POST /log-event
+This project implements an ML-powered decision layer designed to enhance a surveillance system.
+It focuses on improving alert accuracy by integrating machine learning–based risk scoring and experimentation.
 
-## Tech Stack (Planned)
-- Java
-- Spring Boot
-- Maven
-- PostgreSQL
+---
+
+## Key Components
+
+* **Event Simulation** – Generates structured behavioral data
+* **ML Risk Scoring (Python)** – Predicts anomaly probability using Scikit-learn
+* **Decision Engine (Java, Spring Boot)** – Triggers alerts based on model output
+* **Experimentation Layer** – Compares rule-based vs ML-based strategies
+
+---
+
+## System Flow
+
+```id="flow123"
+Event → Risk Scoring → Decision → Alert → Evaluation
+```
+
+---
+
+## Tech Stack
+
+* Java, Spring Boot
+* Python, Scikit-learn, FastAPI
+* Pandas
+
+---
+
+## Example
+
+Input:
+
+```id="example123"
+bet_amount = 8000  
+win_rate = 0.9  
+session_time = 20  
+```
+
+Output:
+
+```id="output123"
+risk_score = 0.82 → ALERT
+```
+
+---
 
 ## Purpose
-This project is designed to demonstrate backend system design for experimentation platforms, including trade-offs in user assignment, scalability, and data consistency.
+
+This project demonstrates how to integrate machine learning into a backend system for real-time decision-making and strategy optimization.
+
+---
